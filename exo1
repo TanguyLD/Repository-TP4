@@ -1,6 +1,20 @@
 2)
  .git/
 
-  
+4)
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git status
 
-  
+
+Ici, aucun fichier n'est ajouter a git encore. 
+
+
+5)
+exo1 appartient maintenant "Modifications qui seront validées :"
+
+7) exo1 	"modifié:   "   
+
+8) git log -p permet de visualiser les modification ainsi que de voir le message de modification.
+
+9) les symbol " +" indique les ajout, les "-", les ligne enlevées par rapport a la version commit.
+
+11) Le fichier exo1 soumi apparait !
