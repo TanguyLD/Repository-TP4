@@ -1,0 +1,18 @@
+FLAGS = -O3 -Wall
+CC= gcc
+LIB= -funroll-loops
+PROGRAMS = pbm2png pbm2eps9
+all: pbm2png pbm2eps9
+
+
+
+pbm2eps9 : printer.c pmb2esp9.c
+	$CC $FLAGS $LIB -c -o pbm2eps9.o  pbm2eps9.c
+	$CC $FLAGS $LIB -c -o printer.o  printer.c  
+	$CC -s -o pbm2eps9 pbm2eps9.o printer.o
+
+pbm2png : pbm2png.c
+	$CC $FLAGS -s -o pbm2png pbm2png.c -lpng
+
+clean:
+	rm -f $(PROGRAMS) *.o *~

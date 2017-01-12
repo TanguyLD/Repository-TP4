@@ -1,0 +1,39 @@
+5) le push met en commun mon fichier
+7)Pull permet de mettre à jour les modification de mes voisins. Push permet d'ajouter mes propres modifications.
+ounting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 1.50 KiB | 0 bytes/s, done.
+Total 11 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/PolytechUPMC-IGM/PremierPas.git
+   26e59a6..36199d6  master -> master
+3408793@pc4063:~/Projet env_dev/Informatique/OPI/TP4/PremierPas$ 
+
+
+13)3408793@pc4063:~/Projet env_dev/Informatique/OPI/TP4/PremierPas$ git lola
+*   36199d6 (HEAD, origin/master, origin/HEAD, master) Merge branch 'master' of 
+|\  
+| *   26e59a6 Merge branch 'master' of https://github.com/PolytechUPMC-IGM/Premi
+| |\  
+| * \   e461775 Merge branch 'master' of https://github.com/PolytechUPMC-IGM/Pre
+| |\ \  
+| * \ \   8cc65e9 Merge branch 'master' of https://github.com/PolytechUPMC-IGM/P
+| |\ \ \  
+| * | | | f53842d Giteub
+* | | | |   61a1edf conflit Merge branch 'master' of https://github.com/Polytech
+|\ \ \ \ \  
+| | |_|_|/  
+| |/| | |   
+| * | | |   8d87e69 Merge branch 'master' of https://github.com/PolytechUPMC-IGM
+| |\ \ \ \  
+| | | |_|/  
+| | |/| |   
+| * | | |   93f00b3 Merge branch 'master' of https://github.com/PolytechUPMC-IGM
+| |\ \ \ \  
+| | | |/ /  
+| | |/| |   
+| * | | | 6086161 vfinal
+* | | | |   f6fb050 Merge branch 'master' of https://github.com/PolytechUPMC-IGM
+:
+

@@ -1,0 +1,59 @@
+question 3)
+
+Hello You !
+==3615== 
+==3615== HEAP SUMMARY:
+==3615==     in use at exit: 0 bytes in 0 blocks
+==3615==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==3615== 
+==3615== All heap blocks were freed -- no leaks are possible
+
+
+ici il n'y a pas de fuite mémoire
+
+question5) 
+
+
+==3688== Process terminating with default action of signal 11 (SIGSEGV)
+==3688==  Access not within mapped region at address 0x0
+==3688==    at 0x4004FD: main (mem.c:6)
+
+
+problème ligne 11
+
+question 6)
+
+Conditional jump or move depends on uninitialised value(s)
+==3737==    at 0x400631: main (mem2.c:11)
+==3737== 
+==3737== Conditional jump or move depends on uninitialised value(s)
+==3737==    at 0x4C2BDA2: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3737==    by 0x40063E: main (mem2.c:14)
+
+
+question 7)
+le free doit être effectué à la fin du programme
+
+queestion 8)
+Erreur renvoyées par Valgrind:
+
+ HEAP SUMMARY:
+==3763==     in use at exit: 40 bytes in 1 blocks
+==3763==   total heap usage: 6 allocs, 5 frees, 140 bytes allocated
+==3763== 
+==3763== LEAK SUMMARY:
+==3763==    definitely lost: 40 bytes in 1 blocks
+==3763==    indirectly lost: 0 bytes in 0 blocks
+==3763==      possibly lost: 0 bytes in 0 blocks
+==3763==    still reachable: 0 bytes in 0 blocks
+==3763==         suppressed: 0 bytes in 0 blocks
+==3763== Rerun with --leak-check=full to see details of leaked memory
+
+Il y a une fuite mémoire
+
+question 9)
+
+    definitely lost: 40 bytes in 1 blocks
+
+Valgrind indique que la fuite vien du block 1.
+

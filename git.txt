@@ -1,0 +1,123 @@
+EXO1
+4)
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git status
+Sur la branche master
+
+Validation initiale
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	exo1
+	exo1~
+	exo2
+	git.txt
+
+5) 
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git status
+Sur la branche master
+
+Validation initiale
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier: exo1
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	#git.txt#
+	.#exo1
+	.#git.txt
+	exo1~
+	exo2
+	git.txt
+6)
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git commit -m "modif exo1"
+[master (commit racine) 3685207] modif exo1
+ Committer: TanguyLD <3408793@pc4067.polytech.upmc.fr>
+Votre nom et votre adresse e-mail ont été configurés automatiquement en se fondant
+sur votre nom d'utilisateur et le nom de votre machine. Veuillez vérifier qu'ils sont corrects.
+Vous pouvez supprimer ce message en les paramétrant explicitement :
+
+    git config --global user.name "Votre Nom"
+    git config --global user.email vous@exemple.com
+
+Après ceci, vous pouvez corriger l'identité utilisée pour ce commit avec :
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+)
+ create mode 100644 exo1
+
+
+
+7)3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git status
+Sur la branche master
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
+
+	modifié:         exo1
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	#git.txt#
+	.#git.txt
+	exo1~
+	exo2
+	git.txt
+
+
+
+8)
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git log -p
+commit 3685207b232a80a8e10765a776816cf3c550f6a5
+Author: TanguyLD <3408793@pc4067.polytech.upmc.fr>
+Date:   Thu Jan 12 09:49:11 2017 +0100
+
+    modif exo1
+
+diff --git a/exo1 b/exo1
+new file mode 100644
+index 0000000..57ea956
+--- /dev/null
++++ b/exo1
+@@ -0,0 +1,6 @@
++2)
++ .git/
++
++  
++
++  
+
+
+9)
+
+3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git diff
+diff --git a/exo1 b/exo1
+index 57ea956..32f7c88 100644
+--- a/exo1
++++ b/exo1
+@@ -1,6 +1,16 @@
+ 2)
+  .git/
+ 
+-  
++4)
++3408793@pc4067:~/Projet env_dev/Informatique/OPI/TP4$ git status
+ 
+-  
++
++Ici, aucun fichier n'est ajouter a git encore. 
++
++
++5)
++exo1 appartient maintenant "Modifications qui seront validées :"
++
++7) exo1        "modifié:   "   
++
++8) git log -p permet de visualiser les modification ainsi que de voir le messag
+
